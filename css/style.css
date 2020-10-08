@@ -116,17 +116,6 @@ div.content {
   height: 1000px;
 }
 
-
-
-
-
-
-
-
-
-
-
-
 .post{
   width: calc(100% - 50px);
 
@@ -267,7 +256,7 @@ margin-bottom: 10px;
 .grid-container1 {
   display: grid;
   grid-gap: 50px;
-  grid-template-columns: 50% 50%;
+  grid-template-columns: auto auto;
   background-color: #ffffff;
   padding: 10px;
 }
@@ -285,7 +274,7 @@ border-width: 10px;
 .grid-container {
   display: grid;
   grid-gap: 10px;
-  grid-template-columns: auto auto;
+  grid-template-columns: 50% 50%;
   background-color: #ffffff;
   padding: 10px;
 }
@@ -339,6 +328,9 @@ border-width: 10px;
 
 @media screen and (max-width: 1000px) {
   .grid-container1 {
+   grid-template-columns: 100%;
+}
+ .grid-container2 {
    grid-template-columns: 100%;
 }
 .modal {
